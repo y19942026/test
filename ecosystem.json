@@ -2,6 +2,7 @@
 	"apps": [
 		{
 			"name": "text",
+			"script": "/home/ubuntu/deploy/deploy-server/bin/www",
 			"env": {
 				"COMMON_VARIABLE": "true"
 			},
