@@ -18,6 +18,14 @@ function App() {
         >
           visit shein
         </a>
+        <a
+          className="App-link"
+          href="https://romwe.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          visit romwe
+        </a>
       </header>
     </div>
   );
