@@ -19,7 +19,7 @@
 			"ref": "origin/master",
 			"repo": "git@github.com:y19942026/test.git",
 			"path": "/home/ubuntu/deploy",
-			"post-deploy": "rm -rf ../deploy-server/public/build && cp build ../deploy-server/public/",
+			"post-deploy": "pub && rm -rf ../deploy-server/public/build && cp build ../deploy-server/public/",
 			"ssh_options": "StrictHostKeyChecking=no",
 			"env": {
 				"NODE_ENV": "production"
