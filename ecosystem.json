@@ -1,25 +1,21 @@
 {
-//	"apps": [
-//		{
-//			"name": "text",
-//			"script": "/home/ubuntu/deploy/deploy-server/bin/www",
-//			"env": {
-//				"COMMON_VARIABLE": "true"
-//			},
-//			"env_production": {
-//				"NODE_ENV": "production"
-//			}
-//		}
-//	],
+	"apps": [
+		{
+			"name": "text",
+			"script": "/home/ubuntu/deploy/deploy-server/bin/www",
+			"env": {
+				"COMMON_VARIABLE": "true"
+			},
+			"env_production": {
+				"NODE_ENV": "production"
+			}
+		}
+	],
 	"deploy": {
 		"production": {
 			"user": "ubuntu",
 			"host": ["118.89.39.58"],
 			"port": "1994",
-			"ref": "origin/master",
-			"repo": "git@github.com:y19942026/test.git",
-			"path": "/home/ubuntu/deploy",
-			"post-deploy": "npm run build && rm -rf ../deploy-server/public/build && cp build ../deploy-server/public/",
 			"ssh_options": "StrictHostKeyChecking=no",
 			"env": {
 				"NODE_ENV": "production"
